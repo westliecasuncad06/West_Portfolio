@@ -1531,9 +1531,9 @@ z-index: 2;
 
     .home__img{
         display: block;
-        width: 230px;
+        width: calc(20vh + 10vw);
         justify-self: center;
-        border-radius: 50%;
+        border-radius: 100%;
         margin-bottom: 1rem;
     }
 
