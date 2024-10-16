@@ -1074,6 +1074,11 @@ font-size: var(--small-font-size);
     transform: translateX(.25rem);
 }
 
+.contact__info-button{
+    color: var(--skin--color)!important;
+
+}
+
 .input__container{
     position: relative;
     margin-top: 1rem;
