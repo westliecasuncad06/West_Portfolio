@@ -1597,7 +1597,7 @@ z-index: 2;
 }
 
 /* For Small Devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
 
     .container{
         margin-left: var(--mb-1);
@@ -1609,7 +1609,7 @@ z-index: 2;
     }
 
     .home__title{
-        font-size: var(--h1-font-size);
+        font-size: calc(4vh + 3vw);
     }
 
     .home__subtitle{
