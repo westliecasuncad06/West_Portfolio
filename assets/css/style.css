@@ -822,9 +822,11 @@ button, input {
 
 /*======== Service Section ===========*/
 .services__container{
-    grid-template-columns: repeat(2,250px);
+    /* three columns on desktop, each tile takes equal space */
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     column-gap: 1.8rem;
+    row-gap: 1.8rem;
 }
 
 .services__content{
@@ -949,6 +951,26 @@ button, input {
         width: 750px;
         margin-left: auto!important;
         margin-right: auto!important;
+    }
+}
+
+/* Responsive adjustments for services tiles */
+@media screen and (max-width: 992px){
+    .services__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .services__container{
+        grid-template-columns: 1fr;
+    }
+    .services__modal-description{
+        padding: 0 1.2rem;
+    }
+    .services__modal-content{
+        width: 90%;
+        padding: 3rem 1.5rem;
     }
 }
 
