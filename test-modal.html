@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Modal Test</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        .test-info {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-info h2 {
+            margin-top: 0;
+            color: #666;
+        }
+        .test-info ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🎨 Portfolio Modal Test Page</h1>
+        
+        <div class="test-info">
+            <h2>Test Instructions:</h2>
+            <ul>
+                <li>✅ Click on the portfolio tile below</li>
+                <li>✅ Modal should open with image gallery</li>
+                <li>✅ Click thumbnails to switch images</li>
+                <li>✅ Use Previous/Next buttons</li>
+                <li>✅ Press ESC to close or click overlay</li>
+                <li>✅ Use arrow keys (← →) for navigation</li>
+                <li>✅ Click the external link icon (should NOT open modal)</li>
+            </ul>
+        </div>
+
+        <!-- Portfolio Tile -->
+        <div class="work__container container">
+            <div class="portfolio__tile" data-portfolio="grc-attendance">
+                <div class="portfolio__tile-image">
+                    <img src="assets/img/Portfolio/GRC-Attendance-Monitoring/GRC-Homepage-Web.png" alt="GRC Attendance Monitoring System">
+                    <div class="portfolio__tile-overlay">
+                        <div class="portfolio__tile-content">
+                            <h3 class="portfolio__tile-title">GRC Attendance Monitoring System</h3>
+                            <p class="portfolio__tile-description">Full-Stack Web Application</p>
+                            <span class="portfolio__tile-button">
+                                View Details
+                                <i class="uil uil-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__tile-footer">
+                    <div class="portfolio__tile-info">
+                        <h4>GRC Attendance System</h4>
+                        <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+                    </div>
+                    <a href="http://grc.gt.tc" target="_blank" class="portfolio__live-link" title="Visit Live Site">
+                        <i class="uil uil-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio__modal" id="portfolioModal">
+        <div class="portfolio__modal-overlay"></div>
+        <div class="portfolio__modal-content">
+            <button class="portfolio__modal-close">
+                <i class="uil uil-times"></i>
+            </button>
+
+            <div class="portfolio__modal-body">
+                <!-- Left Side - Image Gallery -->
+                <div class="portfolio__gallery">
+                    <div class="portfolio__gallery-main">
+                        <img src="assets/img/Portfolio/GRC-Attendance-Monitoring/GRC-Homepage-Web.png" alt="GRC Homepage" id="mainGalleryImage">
+                        <button class="gallery__zoom-btn" id="zoomBtn" title="Zoom Image">
+                            <i class="uil uil-search-plus"></i>
+                        </button>
+                        <button class="gallery__nav gallery__nav-prev">
+                            <i class="uil uil-angle-left"></i>
+                        </button>
+                        <button class="gallery__nav gallery__nav-next">
+                            <i class="uil uil-angle-right"></i>
+                        </button>
+                    </div>
+                    <div class="portfolio__gallery-thumbnails">
+                        <div class="gallery__thumbnail active" data-index="0">
+                            <img src="assets/img/Portfolio/GRC-Attendance-Monitoring/GRC-Homepage-Web.png" alt="Homepage">
+                        </div>
+                        <div class="gallery__thumbnail" data-index="1">
+                            <img src="assets/img/Portfolio/GRC-Attendance-Monitoring/Professor-view.png" alt="Professor View">
+                        </div>
+                        <div class="gallery__thumbnail" data-index="2">
+                            <img src="assets/img/Portfolio/GRC-Attendance-Monitoring/Student-View-mobile-View.png" alt="Student View">
+                        </div>
+                        <div class="gallery__thumbnail" data-index="3">
+                            <img src="assets/img/Portfolio/GRC-Attendance-Monitoring/Mobile-View.png" alt="Mobile View">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Project Details -->
+                <div class="portfolio__details">
+                    <div class="portfolio__details-header">
+                        <span class="portfolio__category">Web Application</span>
+                        <h2 class="portfolio__project-title">GRC Attendance Monitoring System</h2>
+                        <p class="portfolio__project-subtitle">Global Reciprocal College</p>
+                    </div>
+
+                    <div class="portfolio__details-content">
+                        <div class="portfolio__detail-section">
+                            <h3><i class="uil uil-file-info-alt"></i> Project Overview</h3>
+                            <p>A comprehensive attendance monitoring system designed for Global Reciprocal College. The system provides real-time attendance tracking, reporting, and analytics for students and professors.</p>
+                        </div>
+
+                        <div class="portfolio__detail-section">
+                            <h3><i class="uil uil-laptop"></i> Key Features</h3>
+                            <ul class="portfolio__features-list">
+                                <li><i class="uil uil-check"></i> Real-time attendance tracking and monitoring</li>
+                                <li><i class="uil uil-check"></i> Professor dashboard with class management</li>
+                                <li><i class="uil uil-check"></i> Student portal for attendance history</li>
+                                <li><i class="uil uil-check"></i> Responsive design for mobile and desktop</li>
+                                <li><i class="uil uil-check"></i> Automated attendance reports and analytics</li>
+                                <li><i class="uil uil-check"></i> Secure authentication and role-based access</li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio__detail-section">
+                            <h3><i class="uil uil-brackets-curly"></i> Technologies Used</h3>
+                            <div class="portfolio__tech-stack">
+                                <span class="tech__badge">HTML5</span>
+                                <span class="tech__badge">CSS3</span>
+                                <span class="tech__badge">JavaScript</span>
+                                <span class="tech__badge">PHP</span>
+                                <span class="tech__badge">MySQL</span>
+                                <span class="tech__badge">AJAX</span>
+                                <span class="tech__badge">Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__detail-section">
+                            <h3><i class="uil uil-calendar-alt"></i> Project Info</h3>
+                            <ul class="portfolio__info-list">
+                                <li><strong>Created:</strong> 2025</li>
+                                <li><strong>Role:</strong> Full-Stack Developer</li>
+                                <li><strong>Status:</strong> Live & Operational</li>
+                                <li><strong>Website:</strong> <a href="http://grc.gt.tc" target="_blank">grc.gt.tc <i class="uil uil-external-link-alt"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="portfolio__detail-actions">
+                            <a href="http://grc.gt.tc" target="_blank" class="portfolio__action-btn primary">
+                                <i class="uil uil-external-link-alt"></i> Visit Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Image Zoom -->
+    <div class="image-zoom-modal" id="imageZoomModal">
+        <button class="image-zoom-close" id="zoomCloseBtn">
+            <i class="uil uil-times"></i>
+        </button>
+        <img src="" alt="Zoomed Image" id="zoomedImage">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Additional test script
+        console.log('Test page loaded');
+        console.log('Portfolio tile:', document.querySelector('.portfolio__tile'));
+        console.log('Portfolio modal:', document.getElementById('portfolioModal'));
+    </script>
+</body>
+</html>
