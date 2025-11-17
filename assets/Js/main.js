@@ -108,48 +108,202 @@ function portfolipItemDetails(portfolioItem){
 
 /*=============== PORTFOLIO MODAL & GALLERY ===============*/
 document.addEventListener('DOMContentLoaded', function() {
-    const portfolioTile = document.querySelector('.portfolio__tile');
+    const portfolioTiles = document.querySelectorAll('.portfolio__tile');
     const portfolioModal = document.getElementById('portfolioModal');
     const modalClose = document.querySelector('.portfolio__modal-close');
     const modalOverlay = document.querySelector('.portfolio__modal-overlay');
     const mainGalleryImage = document.getElementById('mainGalleryImage');
-    const thumbnails = document.querySelectorAll('.gallery__thumbnail');
+    const thumbnailsContainer = document.getElementById('portfolioThumbnails');
     const prevBtn = document.querySelector('.gallery__nav-prev');
     const nextBtn = document.querySelector('.gallery__nav-next');
+    const categoryEl = document.getElementById('portfolioCategory');
+    const titleEl = document.getElementById('portfolioTitle');
+    const subtitleEl = document.getElementById('portfolioSubtitle');
+    const overviewEl = document.getElementById('portfolioOverview');
+    const featuresList = document.getElementById('portfolioFeatures');
+    const techStack = document.getElementById('portfolioTechStack');
+    const infoList = document.getElementById('portfolioInfoList');
+    const actionBtn = document.getElementById('portfolioLiveButton');
+    const metricsEl = document.getElementById('portfolioMetrics');
+    const badgesEl = document.getElementById('portfolioBadges');
+    const signalEl = document.getElementById('portfolioSignal');
+    const signalTextEl = document.getElementById('portfolioSignalText');
     
-    // Gallery images array
-    const galleryImages = [
-        {
-            src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/GRC-Homepage-Web.png',
-            alt: 'GRC Homepage - Dashboard View'
+    // Portfolio data
+    const portfolioData = {
+        'grc-attendance': {
+            images: [
+                {
+                    src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/GRC-Homepage-Web.png',
+                    alt: 'GRC Homepage - Dashboard View'
+                },
+                {
+                    src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/Professor-view.png',
+                    alt: 'Professor Dashboard - Attendance Management'
+                },
+                {
+                    src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/Student-View-mobile-View.png',
+                    alt: 'Student Mobile View'
+                },
+                {
+                    src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/Mobile-View.png',
+                    alt: 'Mobile Responsive Design'
+                }
+            ],
+            details: {
+                category: 'Web Application',
+                title: 'GRC Attendance Monitoring System',
+                subtitle: 'Global Reciprocal College',
+                overview: 'A comprehensive attendance monitoring system designed for Global Reciprocal College. The system provides real-time attendance tracking, reporting, and analytics for students and professors.',
+                metrics: [
+                    { value: '3.5K+', label: 'Students onboarded' },
+                    { value: '6 dashboards', label: 'Role-based experiences' },
+                    { value: '8 weeks', label: 'Design to deployment' }
+                ],
+                badges: ['Secure auth', 'Realtime dashboards', 'Deployment support'],
+                signal: 'Digitized attendance tracking for 3.5K students, eliminating paper logs and unlocking same-day analytics for program chairs.',
+                features: [
+                    'Real-time attendance tracking and monitoring',
+                    'Professor dashboard with class management',
+                    'Student portal for attendance history',
+                    'Responsive design for mobile and desktop',
+                    'Automated attendance reports and analytics',
+                    'Secure authentication and role-based access'
+                ],
+                technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'AJAX', 'Bootstrap'],
+                created: '2025',
+                role: 'Full-Stack Developer',
+                status: 'Live & Operational',
+                website: 'http://grc.gt.tc',
+                websiteLabel: 'Website',
+                linkDisplayText: 'grc.gt.tc',
+                actionLabel: 'Visit Live Site',
+                actionIcon: 'uil uil-external-link-alt',
+                linkIcon: 'uil uil-external-link-alt',
+                linkTarget: '_blank'
+            }
         },
-        {
-            src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/Professor-view.png',
-            alt: 'Professor Dashboard - Attendance Management'
+        'west-shop': {
+            images: [
+                {
+                    src: 'assets/img/E-commerce-Portfolio/screencapture-westshop-gt-tc-index-php-2025-11-17-18_04_43.png',
+                    alt: 'West Shop - Homepage & Product Catalog'
+                },
+                {
+                    src: 'assets/img/E-commerce-Portfolio/screencapture-westshop-gt-tc-dashboards-buyer-index-php-2025-11-17-18_03_38.png',
+                    alt: 'Buyer Dashboard - Order Management'
+                },
+                {
+                    src: 'assets/img/E-commerce-Portfolio/screencapture-westshop-gt-tc-buyer-orders-php-2025-11-17-18_05_24.png',
+                    alt: 'Order Tracking & History'
+                }
+            ],
+            details: {
+                category: 'E-commerce Platform',
+                title: 'West Shop E-commerce Platform',
+                subtitle: 'Full-Featured Online Shopping System',
+                overview: 'A complete e-commerce solution featuring product management, shopping cart, order processing, and user authentication. Built with modern web technologies to provide a seamless online shopping experience.',
+                metrics: [
+                    { value: '1.2K+', label: 'Monthly shoppers' },
+                    { value: '40%', label: 'Faster fulfillment' },
+                    { value: '10 modules', label: 'Seller tooling' }
+                ],
+                badges: ['Buyer & seller portals', 'Secure checkout', 'Inventory control'],
+                signal: 'Unified the buyer and seller experience, cutting manual order reconciliation time by 40% and enabling near real-time stock insights.',
+                features: [
+                    'User authentication and account management',
+                    'Product catalog with search and filtering',
+                    'Shopping cart and checkout system',
+                    'Order tracking and history',
+                    'Buyer and seller dashboards',
+                    'Secure payment processing integration',
+                    'Responsive design for all devices',
+                    'Admin panel for inventory management'
+                ],
+                technologies: ['PHP', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'MySQL'],
+                created: '2025',
+                role: 'Full-Stack Developer',
+                status: 'Live & Operational',
+                website: 'http://westshop.gt.tc',
+                websiteLabel: 'Website',
+                linkDisplayText: 'westshop.gt.tc',
+                actionLabel: 'Visit Live Site',
+                actionIcon: 'uil uil-external-link-alt',
+                linkIcon: 'uil uil-external-link-alt',
+                linkTarget: '_blank'
+            }
         },
-        {
-            src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/Student-View-mobile-View.png',
-            alt: 'Student Mobile View'
-        },
-        {
-            src: 'assets/img/Portfolio/GRC-Attendance-Monitoring/Mobile-View.png',
-            alt: 'Mobile Responsive Design'
+        'coffee-shop-app': {
+            images: [
+                {
+                    src: 'assets/img/e-commerce%20apps/Screenshot%202025-11-17%20181709.png',
+                    alt: 'Coffee Shop App - Product Grid'
+                },
+                {
+                    src: 'assets/img/e-commerce%20apps/Screenshot%202025-11-17%20181919.png',
+                    alt: 'Coffee Shop App - Product Detail & Cart'
+                },
+                {
+                    src: 'assets/img/e-commerce%20apps/Screenshot%202025-11-17%20181943.png',
+                    alt: 'Coffee Shop App - Order Summary'
+                },
+                {
+                    src: 'assets/img/e-commerce%20apps/Screenshot%202025-11-07%20102520.png',
+                    alt: 'Coffee Shop App - Onboarding Flow'
+                }
+            ],
+            details: {
+                category: 'Mobile Commerce',
+                title: 'Coffee Shop E-commerce',
+                subtitle: 'Mobile E-commerce for Cafés',
+                overview: 'A Flutter-based mobile commerce experience tailored for boutique coffee shops. Built with Firebase for authentication, real-time catalog updates, and cloud-hosted order workflows, the app streamlines ordering, loyalty rewards, and pick-up coordination.',
+                metrics: [
+                    { value: '<5s', label: 'Avg. checkout flow' },
+                    { value: '4 screens', label: 'Order journey' },
+                    { value: 'Realtime', label: 'Inventory sync' }
+                ],
+                badges: ['Firebase sync', 'Loyalty-ready', 'Offline-first'],
+                signal: 'Designed for boutique cafés needing a branded mobile flow—offline browsing, loyalty-ready promos, and instant inventory updates via Firebase.',
+                features: [
+                    'Curated coffee catalog with variants and add-ons',
+                    'Firebase Authentication for customer sign-in and guest checkout',
+                    'Cloud Firestore-backed cart, orders, and inventory sync',
+                    'Push-ready notification layer for order status updates',
+                    'Built-in loyalty tracking and promo banner slots',
+                    'Offline-first caching for menu browsing'
+                ],
+                technologies: ['Flutter', 'Dart', 'Firebase Auth', 'Cloud Firestore', 'Firebase Storage'],
+                created: '2025',
+                role: 'Mobile App Developer',
+                status: 'Beta Release',
+                website: 'assets/img/e-commerce%20apps/app-release.apk',
+                websiteLabel: 'Download to Explore',
+                linkDisplayText: 'Download APK (Android)',
+                actionLabel: 'Download APK',
+                actionIcon: 'uil uil-import',
+                linkIcon: 'uil uil-import',
+                linkTarget: '_self',
+                isDownload: true
+            }
         }
-    ];
+    };
     
     let currentImageIndex = 0;
+    let currentPortfolio = null;
     
-    // Open modal
-    if (portfolioTile) {
-        portfolioTile.addEventListener('click', function(e) {
+    // Open modal for specific portfolio
+    portfolioTiles.forEach(tile => {
+        tile.addEventListener('click', function(e) {
             // Don't open modal if clicking the live link
             if (e.target.closest('.portfolio__live-link')) {
                 return;
             }
-            console.log('Portfolio tile clicked!'); // Debug log
-            openModal();
+            const portfolioId = this.getAttribute('data-portfolio');
+            currentPortfolio = portfolioId;
+            console.log('Portfolio tile clicked:', portfolioId); // Debug log
+            openModal(portfolioId);
         });
-    }
+    });
     
     // Close modal functions
     function closeModal() {
@@ -157,16 +311,164 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Closing modal'); // Debug log
             portfolioModal.classList.remove('active');
             document.body.style.overflow = ''; // Re-enable scrolling
+            currentPortfolio = null;
         }
     }
     
-    function openModal() {
-        if (portfolioModal) {
-            console.log('Opening modal'); // Debug log
+    function openModal(portfolioId) {
+        if (portfolioModal && portfolioData[portfolioId]) {
+            console.log('Opening modal for:', portfolioId); // Debug log
+            currentImageIndex = 0;
+            updateModalContent(portfolioId);
             portfolioModal.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            currentImageIndex = 0;
-            updateGalleryImage();
+        }
+    }
+    
+    // Update modal content based on portfolio
+    function updateModalContent(portfolioId) {
+        const data = portfolioData[portfolioId];
+        if (!data) return;
+        
+        // Update gallery images and thumbnails
+        if (thumbnailsContainer) {
+            thumbnailsContainer.innerHTML = '';
+            data.images.forEach((img, index) => {
+                const thumbDiv = document.createElement('div');
+                thumbDiv.className = 'gallery__thumbnail' + (index === 0 ? ' active' : '');
+                thumbDiv.setAttribute('data-index', index);
+                thumbDiv.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+                thumbDiv.addEventListener('click', function() {
+                    currentImageIndex = index;
+                    updateGalleryImage();
+                });
+                thumbnailsContainer.appendChild(thumbDiv);
+            });
+        }
+        
+        // Update details
+        const details = data.details;
+        if (categoryEl) categoryEl.textContent = details.category;
+        if (titleEl) titleEl.textContent = details.title;
+        if (subtitleEl) subtitleEl.textContent = details.subtitle;
+        if (overviewEl) overviewEl.textContent = details.overview;
+
+        const toggleSection = (el, condition) => {
+            if (!el) return;
+            if (condition) {
+                el.classList.remove('is-hidden');
+            } else {
+                el.classList.add('is-hidden');
+            }
+        };
+
+        if (metricsEl) {
+            const hasMetrics = Array.isArray(details.metrics) && details.metrics.length > 0;
+            toggleSection(metricsEl, hasMetrics);
+            if (hasMetrics) {
+                metricsEl.innerHTML = details.metrics.map(metric => `
+                    <div class="portfolio__metric">
+                        <span class="portfolio__metric-value">${metric.value}</span>
+                        <span class="portfolio__metric-label">${metric.label}</span>
+                    </div>
+                `).join('');
+            } else {
+                metricsEl.innerHTML = '';
+            }
+        }
+
+        if (badgesEl) {
+            const hasBadges = Array.isArray(details.badges) && details.badges.length > 0;
+            toggleSection(badgesEl, hasBadges);
+            if (hasBadges) {
+                badgesEl.innerHTML = details.badges.map(badge => `
+                    <span class="portfolio__badge">${badge}</span>
+                `).join('');
+            } else {
+                badgesEl.innerHTML = '';
+            }
+        }
+
+        if (signalEl) {
+            const hasSignal = Boolean(details.signal);
+            toggleSection(signalEl, hasSignal);
+            if (hasSignal && signalTextEl) {
+                signalTextEl.textContent = details.signal;
+            }
+        }
+        
+        // Update features list
+        if (featuresList) {
+            featuresList.innerHTML = details.features.map(feature => 
+                `<li><i class="uil uil-check"></i> ${feature}</li>`
+            ).join('');
+        }
+        
+        // Update tech stack
+        if (techStack) {
+            techStack.innerHTML = details.technologies.map(tech => 
+                `<span class="tech__badge">${tech}</span>`
+            ).join('');
+        }
+        
+        // Update project info
+        if (infoList) {
+            const linkTarget = details.linkTarget || '_blank';
+            const isDownloadLink = Boolean(details.isDownload);
+            const linkLabel = details.websiteLabel || 'Website';
+            const linkIcon = details.linkIcon || 'uil uil-external-link-alt';
+            const displayUrl = details.linkDisplayText || (details.website ? details.website.replace(/^https?:\/\//, '') : '');
+            const downloadAttr = isDownloadLink ? ' download' : '';
+            infoList.innerHTML = `
+                <li><strong>Created:</strong> ${details.created}</li>
+                <li><strong>Role:</strong> ${details.role}</li>
+                <li><strong>Status:</strong> ${details.status}</li>
+                <li><strong>${linkLabel}:</strong> <a href="${details.website}" target="${linkTarget}"${downloadAttr}>${displayUrl} <i class="${linkIcon}"></i></a></li>
+            `;
+        }
+        
+        // Update action button
+        if (actionBtn) {
+            const linkTarget = details.linkTarget || '_blank';
+            const isDownloadLink = Boolean(details.isDownload);
+            const actionLabel = details.actionLabel || 'Visit Live Site';
+            const actionIcon = details.actionIcon || 'uil uil-external-link-alt';
+            actionBtn.href = details.website || '#';
+            actionBtn.target = linkTarget;
+            if (isDownloadLink) {
+                actionBtn.setAttribute('download', '');
+            } else {
+                actionBtn.removeAttribute('download');
+            }
+            actionBtn.innerHTML = `<i class="${actionIcon}"></i> ${actionLabel}`;
+        }
+        
+        // Update main image
+        updateGalleryImage();
+    }
+    
+    // Update gallery image
+    function updateGalleryImage() {
+        if (!currentPortfolio || !portfolioData[currentPortfolio]) return;
+        
+        const images = portfolioData[currentPortfolio].images;
+        if (mainGalleryImage && images[currentImageIndex]) {
+            // Fade out
+            mainGalleryImage.style.opacity = '0';
+            
+            setTimeout(() => {
+                mainGalleryImage.src = images[currentImageIndex].src;
+                mainGalleryImage.alt = images[currentImageIndex].alt;
+                
+                // Fade in
+                mainGalleryImage.style.opacity = '1';
+            }, 150);
+            
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.gallery__thumbnail');
+            thumbnails.forEach((thumb, index) => {
+                thumb.classList.toggle('active', index === currentImageIndex);
+            });
         }
     }
     
@@ -186,40 +488,14 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     });
-    
-    // Update gallery image
-    function updateGalleryImage() {
-        if (mainGalleryImage && galleryImages[currentImageIndex]) {
-            // Fade out
-            mainGalleryImage.style.opacity = '0';
-            
-            setTimeout(() => {
-                mainGalleryImage.src = galleryImages[currentImageIndex].src;
-                mainGalleryImage.alt = galleryImages[currentImageIndex].alt;
-                
-                // Fade in
-                mainGalleryImage.style.opacity = '1';
-            }, 150);
-            
-            // Update active thumbnail
-            thumbnails.forEach((thumb, index) => {
-                thumb.classList.toggle('active', index === currentImageIndex);
-            });
-        }
-    }
-    
-    // Thumbnail clicks
-    thumbnails.forEach((thumbnail, index) => {
-        thumbnail.addEventListener('click', function() {
-            currentImageIndex = index;
-            updateGalleryImage();
-        });
-    });
+
     
     // Previous button
     if (prevBtn) {
         prevBtn.addEventListener('click', function() {
-            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            if (!currentPortfolio || !portfolioData[currentPortfolio]) return;
+            const images = portfolioData[currentPortfolio].images;
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
             updateGalleryImage();
         });
     }
@@ -227,19 +503,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Next button
     if (nextBtn) {
         nextBtn.addEventListener('click', function() {
-            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            if (!currentPortfolio || !portfolioData[currentPortfolio]) return;
+            const images = portfolioData[currentPortfolio].images;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
             updateGalleryImage();
         });
     }
     
     // Keyboard navigation (arrow keys)
     document.addEventListener('keydown', function(e) {
-        if (portfolioModal && portfolioModal.classList.contains('active')) {
+        if (portfolioModal && portfolioModal.classList.contains('active') && currentPortfolio) {
+            const images = portfolioData[currentPortfolio].images;
             if (e.key === 'ArrowLeft') {
-                currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
                 updateGalleryImage();
             } else if (e.key === 'ArrowRight') {
-                currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+                currentImageIndex = (currentImageIndex + 1) % images.length;
                 updateGalleryImage();
             }
         }
