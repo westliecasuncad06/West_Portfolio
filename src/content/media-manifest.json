@@ -1,0 +1,370 @@
+{
+  "/images/westlie-about.webp": {
+    "width": 500,
+    "height": 500
+  },
+  "/images/westlie-portrait.webp": {
+    "width": 1000,
+    "height": 1250
+  },
+  "/work/b1g-timer/dashboard-live.webp": {
+    "width": 1120,
+    "height": 670,
+    "thumb": "/work/b1g-timer/thumbs/dashboard-live.webp"
+  },
+  "/work/b1g-timer/dashboard-run-of-show.webp": {
+    "width": 1536,
+    "height": 730,
+    "thumb": "/work/b1g-timer/thumbs/dashboard-run-of-show.webp"
+  },
+  "/work/b1g-timer/room-picker.webp": {
+    "width": 1120,
+    "height": 670,
+    "thumb": "/work/b1g-timer/thumbs/room-picker.webp"
+  },
+  "/work/b1g-timer/scripture-view.webp": {
+    "width": 1600,
+    "height": 1000,
+    "thumb": "/work/b1g-timer/thumbs/scripture-view.webp"
+  },
+  "/work/b1g-timer/stage-display.webp": {
+    "width": 1115,
+    "height": 944,
+    "thumb": "/work/b1g-timer/thumbs/stage-display.webp"
+  },
+  "/work/campus-hub/landing-full.webp": {
+    "width": 1440,
+    "height": 1916,
+    "thumb": "/work/campus-hub/thumbs/landing-full.webp"
+  },
+  "/work/campus-hub/landing-phone.webp": {
+    "width": 780,
+    "height": 1688,
+    "thumb": "/work/campus-hub/thumbs/landing-phone.webp"
+  },
+  "/work/campus-hub/landing.webp": {
+    "width": 1600,
+    "height": 1000,
+    "thumb": "/work/campus-hub/thumbs/landing.webp"
+  },
+  "/work/campus-hub/login-phone.webp": {
+    "width": 780,
+    "height": 1688,
+    "thumb": "/work/campus-hub/thumbs/login-phone.webp"
+  },
+  "/work/campus-hub/login.webp": {
+    "width": 1600,
+    "height": 1000,
+    "thumb": "/work/campus-hub/thumbs/login.webp"
+  },
+  "/work/coffee-shop-app/onboarding.webp": {
+    "width": 570,
+    "height": 1013,
+    "thumb": "/work/coffee-shop-app/thumbs/onboarding.webp"
+  },
+  "/work/coffee-shop-app/order-summary.webp": {
+    "width": 574,
+    "height": 1008,
+    "thumb": "/work/coffee-shop-app/thumbs/order-summary.webp"
+  },
+  "/work/coffee-shop-app/product-detail.webp": {
+    "width": 567,
+    "height": 998,
+    "thumb": "/work/coffee-shop-app/thumbs/product-detail.webp"
+  },
+  "/work/coffee-shop-app/product-grid.webp": {
+    "width": 567,
+    "height": 1007,
+    "thumb": "/work/coffee-shop-app/thumbs/product-grid.webp"
+  },
+  "/work/grc-attendance/homepage.webp": {
+    "width": 1600,
+    "height": 732,
+    "thumb": "/work/grc-attendance/thumbs/homepage.webp"
+  },
+  "/work/grc-attendance/mobile-view.webp": {
+    "width": 521,
+    "height": 962,
+    "thumb": "/work/grc-attendance/thumbs/mobile-view.webp"
+  },
+  "/work/grc-attendance/professor-view.webp": {
+    "width": 1600,
+    "height": 727,
+    "thumb": "/work/grc-attendance/thumbs/professor-view.webp"
+  },
+  "/work/grc-attendance/student-mobile.webp": {
+    "width": 568,
+    "height": 968,
+    "thumb": "/work/grc-attendance/thumbs/student-mobile.webp"
+  },
+  "/work/grc-connect/account-setup.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/account-setup.webp"
+  },
+  "/work/grc-connect/accounting-confirm-payment.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/accounting-confirm-payment.webp"
+  },
+  "/work/grc-connect/accounting-enrollment-dashboard.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/accounting-enrollment-dashboard.webp"
+  },
+  "/work/grc-connect/accounting-fee-settings.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/accounting-fee-settings.webp"
+  },
+  "/work/grc-connect/accounting-now-serving.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/accounting-now-serving.webp"
+  },
+  "/work/grc-connect/accounting-payment-queue.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/accounting-payment-queue.webp"
+  },
+  "/work/grc-connect/accounting-statement-of-account.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/accounting-statement-of-account.webp"
+  },
+  "/work/grc-connect/admission-create-account-filled.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/admission-create-account-filled.webp"
+  },
+  "/work/grc-connect/admission-enrollment-dashboard.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/admission-enrollment-dashboard.webp"
+  },
+  "/work/grc-connect/admission-student-directory.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/admission-student-directory.webp"
+  },
+  "/work/grc-connect/admission-student-records.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/admission-student-records.webp"
+  },
+  "/work/grc-connect/chair-faculty-loading.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/chair-faculty-loading.webp"
+  },
+  "/work/grc-connect/chair-program-chair-analytics.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/chair-program-chair-analytics.webp"
+  },
+  "/work/grc-connect/chair-schedule.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/chair-schedule.webp"
+  },
+  "/work/grc-connect/chair-student-prospectus.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/chair-student-prospectus.webp"
+  },
+  "/work/grc-connect/chair-subjects-prerequisites.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/chair-subjects-prerequisites.webp"
+  },
+  "/work/grc-connect/dean-enrollment-dashboard.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/dean-enrollment-dashboard.webp"
+  },
+  "/work/grc-connect/dean-faculty-load-monitoring.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/dean-faculty-load-monitoring.webp"
+  },
+  "/work/grc-connect/dean-honors.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/dean-honors.webp"
+  },
+  "/work/grc-connect/dean-schedule-approvals.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/dean-schedule-approvals.webp"
+  },
+  "/work/grc-connect/executive-curriculum-approvals.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/executive-curriculum-approvals.webp"
+  },
+  "/work/grc-connect/executive-institution-dashboard.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/executive-institution-dashboard.webp"
+  },
+  "/work/grc-connect/executive-master-schedule.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/executive-master-schedule.webp"
+  },
+  "/work/grc-connect/faculty-availability-preferences.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/faculty-availability-preferences.webp"
+  },
+  "/work/grc-connect/faculty-grade-submission.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/faculty-grade-submission.webp"
+  },
+  "/work/grc-connect/faculty-teaching-schedule.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/faculty-teaching-schedule.webp"
+  },
+  "/work/grc-connect/login-code.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/login-code.webp"
+  },
+  "/work/grc-connect/login.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/login.webp"
+  },
+  "/work/grc-connect/phone-enrollment.webp": {
+    "width": 780,
+    "height": 1688,
+    "thumb": "/work/grc-connect/thumbs/phone-enrollment.webp"
+  },
+  "/work/grc-connect/phone-login.webp": {
+    "width": 780,
+    "height": 1688,
+    "thumb": "/work/grc-connect/thumbs/phone-login.webp"
+  },
+  "/work/grc-connect/phone-menu.webp": {
+    "width": 780,
+    "height": 1688,
+    "thumb": "/work/grc-connect/thumbs/phone-menu.webp"
+  },
+  "/work/grc-connect/portal-home.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/portal-home.webp"
+  },
+  "/work/grc-connect/portal-notifications.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/portal-notifications.webp"
+  },
+  "/work/grc-connect/registrar-head-academic-transcripts.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-academic-transcripts.webp"
+  },
+  "/work/grc-connect/registrar-head-attrition-analytics.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-attrition-analytics.webp"
+  },
+  "/work/grc-connect/registrar-head-audit-logs.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-audit-logs.webp"
+  },
+  "/work/grc-connect/registrar-head-ched-reports.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-ched-reports.webp"
+  },
+  "/work/grc-connect/registrar-head-enrollment-approvals.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-enrollment-approvals.webp"
+  },
+  "/work/grc-connect/registrar-head-enrollment-dashboard.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-enrollment-dashboard.webp"
+  },
+  "/work/grc-connect/registrar-head-registrar-analytics.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-registrar-analytics.webp"
+  },
+  "/work/grc-connect/registrar-head-term-form.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-head-term-form.webp"
+  },
+  "/work/grc-connect/registrar-review-enrollment.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/registrar-review-enrollment.webp"
+  },
+  "/work/grc-connect/student-digital-com.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-digital-com.webp"
+  },
+  "/work/grc-connect/student-enrollment.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-enrollment.webp"
+  },
+  "/work/grc-connect/student-grades.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-grades.webp"
+  },
+  "/work/grc-connect/student-irregular-arranged.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-irregular-arranged.webp"
+  },
+  "/work/grc-connect/student-prospectus.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-prospectus.webp"
+  },
+  "/work/grc-connect/student-schedule.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-schedule.webp"
+  },
+  "/work/grc-connect/student-section-dialog.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-section-dialog.webp"
+  },
+  "/work/grc-connect/student-statement-of-account.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-statement-of-account.webp"
+  },
+  "/work/grc-connect/student-student-information.webp": {
+    "width": 1280,
+    "height": 800,
+    "thumb": "/work/grc-connect/thumbs/student-student-information.webp"
+  },
+  "/work/west-shop/buyer-dashboard.webp": {
+    "width": 1440,
+    "height": 1494,
+    "thumb": "/work/west-shop/thumbs/buyer-dashboard.webp"
+  },
+  "/work/west-shop/buyer-orders.webp": {
+    "width": 1440,
+    "height": 1916,
+    "thumb": "/work/west-shop/thumbs/buyer-orders.webp"
+  },
+  "/work/west-shop/homepage.webp": {
+    "width": 1440,
+    "height": 6800,
+    "thumb": "/work/west-shop/thumbs/homepage.webp"
+  }
+}
