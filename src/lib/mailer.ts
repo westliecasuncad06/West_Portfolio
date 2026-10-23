@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import type { ContactInput } from "@/lib/contact-schema";
 
-export const DEFAULT_CONTACT_TO = "westliecasuncad06work@gmail.com";
+export const DEFAULT_CONTACT_TO = "westliecasuncad06@gmail.com";
 
 export type MailerConfig = { user: string; pass: string; to: string };
 

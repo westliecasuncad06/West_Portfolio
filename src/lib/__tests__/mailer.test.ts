@@ -17,7 +17,7 @@ describe("getMailerConfig", () => {
 
   it("sends to the portfolio inbox when CONTACT_TO_EMAIL is not set", () => {
     const config = getMailerConfig({ GMAIL_USER: "west@gmail.com", GMAIL_APP_PASSWORD: "x" });
-    expect(config).toEqual({ user: "west@gmail.com", pass: "x", to: "westliecasuncad06work@gmail.com" });
+    expect(config).toEqual({ user: "west@gmail.com", pass: "x", to: "westliecasuncad06@gmail.com" });
   });
 
   it("uses CONTACT_TO_EMAIL when it is set", () => {

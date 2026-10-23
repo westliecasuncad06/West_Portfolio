@@ -7,7 +7,7 @@ export const profile = {
   tagline: "I build the systems a campus runs on.",
   intro:
     "Enrollment for a whole college. Attendance for a campus ministry. Countdown timers for live stages. I design them, build them, ship them, and cut the video that shows them off.",
-  email: "westliecasuncad06work@gmail.com",
+  email: "westliecasuncad06@gmail.com",
   whatsapp: { display: "+63 961 582 0084", href: "https://wa.me/639615820084" },
   github: "https://github.com/westliecasuncad06",
   about: {

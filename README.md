@@ -35,7 +35,7 @@ The form posts to `/api/contact`, which sends through Gmail SMTP with Nodemailer
 |---|---|
 | `GMAIL_USER` | The Gmail address that sends the emails |
 | `GMAIL_APP_PASSWORD` | The App Password from step 2 |
-| `CONTACT_TO_EMAIL` | Optional. Where messages arrive. Defaults to westliecasuncad06work@gmail.com |
+| `CONTACT_TO_EMAIL` | Optional. Where messages arrive. Defaults to westliecasuncad06@gmail.com |
 
 4. Redeploy on Vercel so the new variables take effect.
 
